@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF9E077D2577B9EB001BB60C /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9E077C2577B9EB001BB60C /* AlarmView.swift */; };
+		BF9E079A2577BD20001BB60C /* AlarmInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = BF9E07992577BD20001BB60C /* AlarmInfo.json */; };
 		BFB56BB3256D2D9400CC4D7C /* ClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB56BB2256D2D9400CC4D7C /* ClockApp.swift */; };
 		BFB56BB5256D2D9400CC4D7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB56BB4256D2D9400CC4D7C /* ContentView.swift */; };
 		BFB56BB7256D2D9600CC4D7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB56BB6256D2D9600CC4D7C /* Assets.xcassets */; };
@@ -33,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF9E077C2577B9EB001BB60C /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
+		BF9E07992577BD20001BB60C /* AlarmInfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AlarmInfo.json; sourceTree = "<group>"; };
 		BFB56BAF256D2D9400CC4D7C /* Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB56BB2256D2D9400CC4D7C /* ClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockApp.swift; sourceTree = "<group>"; };
 		BFB56BB4256D2D9400CC4D7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,9 +76,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF9E07902577BCF2001BB60C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF9E07992577BD20001BB60C /* AlarmInfo.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		BFB56BA6256D2D9400CC4D7C = {
 			isa = PBXGroup;
 			children = (
+				BF9E07902577BCF2001BB60C /* Resources */,
 				BFB56BB1256D2D9400CC4D7C /* Clock */,
 				BFB56BC3256D2D9600CC4D7C /* ClockTests */,
 				BFB56BCE256D2D9600CC4D7C /* ClockUITests */,
@@ -97,6 +110,7 @@
 			children = (
 				BFB56BB2256D2D9400CC4D7C /* ClockApp.swift */,
 				BFB56BB4256D2D9400CC4D7C /* ContentView.swift */,
+				BF9E077C2577B9EB001BB60C /* AlarmView.swift */,
 				BFB56BB6256D2D9600CC4D7C /* Assets.xcassets */,
 				BFB56BBB256D2D9600CC4D7C /* Info.plist */,
 				BFB56BB8256D2D9600CC4D7C /* Preview Content */,
@@ -235,6 +249,7 @@
 			files = (
 				BFB56BBA256D2D9600CC4D7C /* Preview Assets.xcassets in Resources */,
 				BFB56BB7256D2D9600CC4D7C /* Assets.xcassets in Resources */,
+				BF9E079A2577BD20001BB60C /* AlarmInfo.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +276,7 @@
 			files = (
 				BFB56BB5256D2D9400CC4D7C /* ContentView.swift in Sources */,
 				BFB56BB3256D2D9400CC4D7C /* ClockApp.swift in Sources */,
+				BF9E077D2577B9EB001BB60C /* AlarmView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

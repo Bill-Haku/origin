@@ -9,9 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Haku's Clock")
-            .padding()
-            .font(.title)
+        VStack {
+            NavigationView {
+                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
+                    
+                }
+            }
+        }
     }
 }
 
