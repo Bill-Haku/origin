@@ -11,10 +11,14 @@ struct ContentView: View {
     var body: some View {
         VStack {
             NavigationView {
-                NavigationLink(destination: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Destination@*/Text("Destination")/*@END_MENU_TOKEN@*/) {
-                    
-                }
+//                List() { alarm in
+//                    NavigationLink(destination:
+//                        AlarmView(alarm: alarm)) {
+//                        AlarmDetail()
+//                    }
+//                }
             }
+            .navigationBarTitle(Text("Alarm"))
         }
     }
 }

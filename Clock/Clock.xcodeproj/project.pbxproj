@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF08003425791506007D200B /* AlarmDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF08003325791506007D200B /* AlarmDetail.swift */; };
 		BF9E077D2577B9EB001BB60C /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9E077C2577B9EB001BB60C /* AlarmView.swift */; };
 		BF9E079A2577BD20001BB60C /* AlarmInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = BF9E07992577BD20001BB60C /* AlarmInfo.json */; };
 		BFB56BB3256D2D9400CC4D7C /* ClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB56BB2256D2D9400CC4D7C /* ClockApp.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF08003325791506007D200B /* AlarmDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmDetail.swift; sourceTree = "<group>"; };
 		BF9E077C2577B9EB001BB60C /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
 		BF9E07992577BD20001BB60C /* AlarmInfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AlarmInfo.json; sourceTree = "<group>"; };
 		BFB56BAF256D2D9400CC4D7C /* Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -110,6 +112,7 @@
 			children = (
 				BFB56BB2256D2D9400CC4D7C /* ClockApp.swift */,
 				BFB56BB4256D2D9400CC4D7C /* ContentView.swift */,
+				BF08003325791506007D200B /* AlarmDetail.swift */,
 				BF9E077C2577B9EB001BB60C /* AlarmView.swift */,
 				BFB56BB6256D2D9600CC4D7C /* Assets.xcassets */,
 				BFB56BBB256D2D9600CC4D7C /* Info.plist */,
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF08003425791506007D200B /* AlarmDetail.swift in Sources */,
 				BFB56BB5256D2D9400CC4D7C /* ContentView.swift in Sources */,
 				BFB56BB3256D2D9400CC4D7C /* ClockApp.swift in Sources */,
 				BF9E077D2577B9EB001BB60C /* AlarmView.swift in Sources */,
