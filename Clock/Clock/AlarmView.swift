@@ -7,16 +7,18 @@
 
 import SwiftUI
 
+//var alarmInfo = [alarmInfoType]()
+
 struct AlarmView: View {
-    let alarm: alarm
+    
+    @State private var ison = true
     var body: some View {
         HStack {
             HStack {
-                
-                Label(alarm.name, systemImage: /*@START_MENU_TOKEN@*/"42.circle"/*@END_MENU_TOKEN@*/)
-            }
-            Toggle(isOn: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Is On@*/.constant(true)/*@END_MENU_TOKEN@*/) {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label@*/Text("Label")/*@END_MENU_TOKEN@*/
+                Toggle(isOn: $ison, label: {
+                    Text("\(alarmInfo.timehr) : \(alarmInfo.timemin)")
+                        .font(.system(size: 30))
+                })
             }
         }
     }
@@ -24,8 +26,6 @@ struct AlarmView: View {
 
 struct AlarmView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            AlarmView(alarm: alarmInfo[0])
-        }
+        AlarmView()
     }
 }

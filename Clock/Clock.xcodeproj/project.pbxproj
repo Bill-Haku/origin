@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BF08003425791506007D200B /* AlarmDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF08003325791506007D200B /* AlarmDetail.swift */; };
+		BF800D9A258248C400F49EEC /* Questions.c in Sources */ = {isa = PBXBuildFile; fileRef = BF800D99258248C400F49EEC /* Questions.c */; };
 		BF9E077D2577B9EB001BB60C /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9E077C2577B9EB001BB60C /* AlarmView.swift */; };
 		BF9E079A2577BD20001BB60C /* AlarmInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = BF9E07992577BD20001BB60C /* AlarmInfo.json */; };
 		BFB56BB3256D2D9400CC4D7C /* ClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB56BB2256D2D9400CC4D7C /* ClockApp.swift */; };
@@ -37,6 +38,9 @@
 
 /* Begin PBXFileReference section */
 		BF08003325791506007D200B /* AlarmDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmDetail.swift; sourceTree = "<group>"; };
+		BF800D97258248C300F49EEC /* ClockTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClockTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		BF800D98258248C400F49EEC /* Questions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Questions.h; sourceTree = "<group>"; };
+		BF800D99258248C400F49EEC /* Questions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Questions.c; sourceTree = "<group>"; };
 		BF9E077C2577B9EB001BB60C /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
 		BF9E07992577BD20001BB60C /* AlarmInfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AlarmInfo.json; sourceTree = "<group>"; };
 		BFB56BAF256D2D9400CC4D7C /* Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF800D9E25824A1700F49EEC /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				BF800D98258248C400F49EEC /* Questions.h */,
+				BF800D99258248C400F49EEC /* Questions.c */,
+			);
+			path = Question;
+			sourceTree = "<group>";
+		};
 		BF9E07902577BCF2001BB60C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,8 +128,10 @@
 				BF08003325791506007D200B /* AlarmDetail.swift */,
 				BF9E077C2577B9EB001BB60C /* AlarmView.swift */,
 				BFB56BB6256D2D9600CC4D7C /* Assets.xcassets */,
+				BF800D9E25824A1700F49EEC /* Question */,
 				BFB56BBB256D2D9600CC4D7C /* Info.plist */,
 				BFB56BB8256D2D9600CC4D7C /* Preview Content */,
+				BF800D97258248C300F49EEC /* ClockTests-Bridging-Header.h */,
 			);
 			path = Clock;
 			sourceTree = "<group>";
@@ -217,6 +232,7 @@
 					};
 					BFB56BBF256D2D9600CC4D7C = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 						TestTargetID = BFB56BAE256D2D9400CC4D7C;
 					};
 					BFB56BCA256D2D9600CC4D7C = {
@@ -289,6 +305,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFB56BC5256D2D9600CC4D7C /* ClockTests.swift in Sources */,
+				BF800D9A258248C400F49EEC /* Questions.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +496,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ClockTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -489,6 +507,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Haku.ClockTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Clock/ClockTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clock.app/Clock";
@@ -500,6 +520,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ClockTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -510,6 +531,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Haku.ClockTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Clock/ClockTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clock.app/Clock";

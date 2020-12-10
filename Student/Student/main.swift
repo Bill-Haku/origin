@@ -11,9 +11,9 @@ import Foundation
 class Human {
     var gender: String = "Female"
     var age: Int = 19
-    var name: String = "Haku"
+    var name: String = "Bill"
     func printHuman() {
-        print("Human: \(hum.name)\nAge: \(hum.age)\nGender: \(hum.gender)\n")
+        print("Human: \nName: \(hum.name)\nAge: \(hum.age)\nGender: \(hum.gender)\n")
     }
 }
 
@@ -24,7 +24,7 @@ class student: Human {
     var classnum: Int = 20
     private var stunum: Int = 1
     func printStu() {
-        print("Student: \(stu.name)\nAge: \(stu.age)\nGender: \(stu.gender)\nStudent number: \(stu.stunum)\nCollege: \(stu.college)\nSchool: \(stu.school)\nGrade: \(stu.grade)\nClass: \(stu.classnum)\n")
+        print("Student: \nName: \(stu.name)\nAge: \(stu.age)\nGender: \(stu.gender)\nStudent number: \(stu.stunum)\nCollege: \(stu.college)\nSchool: \(stu.school)\nGrade: \(stu.grade)\nClass: \(stu.classnum)\n")
     }
 }
 
