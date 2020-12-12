@@ -7,21 +7,19 @@
 
 import SwiftUI
 
-struct alarmInfoType: Hashable, Codable {
-    var isOn: Bool = true
+struct alarmInfoType: Hashable, Codable, Identifiable {
+    var isOn: Bool? = true
     var id: Int = 1
-    var timehr: Int = 9
-    var timemin: Int = 0
-    var name: String = "Get up!!"
-    func alarmInfoInit() {
-        alarmInfo.name = "Get up!"
-    }
+    var timeHr: Int = 9
+    var timeMin: Int = 0
+    var name: String? = "Get up!!"
+//    func alarmInfoInit() {
+//        alarmInfo.name = "Get up!"
+//    }
 }
 
-//var alarmInfo = [alarmInfoType]() /*= load("AlarmInfo.json")*/
-var alarmInfo = alarmInfoType()
-
-
+//var alarmInfo = alarmInfoType()
+let alarmInfoData = [alarmInfoType](repeating: alarmInfoType(isOn: true, id: 1, timeHr: 0, timeMin: 0, name: ""), count: 100)
 //alarmInfo.append(alarmInfoType)
 //func alarmInfoInit() {
 ////    let alarmInfo1: alarmInfoType
@@ -29,6 +27,9 @@ var alarmInfo = alarmInfoType()
 //
 //}
 
+func InitAlarmInfo() {
+    
+}
 
 //func load<T: Decodable>(_ filename: String) -> T {
 //    let data: Data

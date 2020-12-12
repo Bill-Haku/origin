@@ -10,13 +10,15 @@ import SwiftUI
 //var alarmInfo = [alarmInfoType]()
 
 struct AlarmView: View {
+//    var alarmInfo = Array(repeating: alarmInfoType(), count: 100)
+    var alarmInfo: alarmInfoType
     
-    @State private var ison = true
+    @State private var isOn = true
     var body: some View {
         HStack {
             HStack {
-                Toggle(isOn: $ison, label: {
-                    Text("\(alarmInfo.timehr) : \(alarmInfo.timemin)")
+                Toggle(isOn: $isOn, label: {
+                    Text("\(alarmInfo.timeHr) : \(alarmInfo.timeMin)")
                         .font(.system(size: 30))
                 })
             }
@@ -26,6 +28,6 @@ struct AlarmView: View {
 
 struct AlarmView_Previews: PreviewProvider {
     static var previews: some View {
-        AlarmView()
+        AlarmView(alarmInfo: alarmInfoData[0])
     }
 }

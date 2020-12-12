@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct AlarmDetail: View {
+    var alarmInfo: alarmInfoType
+    
     var body: some View {
         HStack {
             Picker(selection: .constant(1), label: Text("Time"), content: {
@@ -40,6 +42,6 @@ struct AlarmDetail: View {
 
 struct AlarmDetail_Previews: PreviewProvider {
     static var previews: some View {
-        AlarmDetail()
+        AlarmDetail(alarmInfo: alarmInfoData[0])
     }
 }

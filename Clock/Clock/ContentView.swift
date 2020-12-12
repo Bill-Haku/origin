@@ -11,8 +11,12 @@ struct ContentView: View {
     var body: some View {
         VStack {
             NavigationView {
-                List {
-                    AlarmView()
+                List(alarmInfoData) { alarmInfo in
+                    NavigationLink(
+                        destination: AlarmDetail(alarmInfo: alarmInfo)) {
+//                        AlarmView(alarmInfo: alarmInfoData[0])
+                        AlarmView(alarmInfo: alarmInfo)
+                    }
                 }
                 .navigationBarTitle(Text("Alarm"),displayMode: .automatic)
             }
