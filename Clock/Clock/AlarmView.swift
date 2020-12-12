@@ -15,12 +15,18 @@ struct AlarmView: View {
     
     @State private var isOn = true
     var body: some View {
-        HStack {
+        VStack {
+            Toggle(isOn: $isOn, label: {
+                Text("\(alarmInfo.timeHr) : \(alarmInfo.timeMin)")
+                    .font(.system(size: 40))
+            })
+            .frame(height: 75)
             HStack {
-                Toggle(isOn: $isOn, label: {
-                    Text("\(alarmInfo.timeHr) : \(alarmInfo.timeMin)")
-                        .font(.system(size: 30))
-                })
+                Label(alarmInfo.name!, systemImage: "")
+                    .frame(height: 30)
+                    .font(.system(size: 20))
+                    .foregroundColor(/*@START_MENU_TOKEN@*/.gray/*@END_MENU_TOKEN@*/)
+                Spacer()
             }
         }
     }
@@ -29,5 +35,6 @@ struct AlarmView: View {
 struct AlarmView_Previews: PreviewProvider {
     static var previews: some View {
         AlarmView(alarmInfo: alarmInfoData[0])
+            .previewLayout(.fixed(width: 450, height: 105))
     }
 }

@@ -18,7 +18,12 @@ struct ContentView: View {
                         AlarmView(alarmInfo: alarmInfo)
                     }
                 }
-                .navigationBarTitle(Text("Alarm"),displayMode: .automatic)
+                .navigationBarTitle(Text("Alarm List"),displayMode: .automatic)
+                .navigationBarItems(leading:  Button(action: {
+                       print("Go to index page")
+                   }) {
+                       Text("Haku's Alarm")
+                   }, trailing: TrailingButtons())
             }
         }
     }
@@ -27,5 +32,15 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct TrailingButtons : View{
+    var body: some View {
+        Button(action: {
+            print("Edit the data")
+        }) {
+            Image(systemName: "livephoto")
+        }
     }
 }

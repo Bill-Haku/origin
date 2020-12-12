@@ -10,7 +10,6 @@
 		BF08003425791506007D200B /* AlarmDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF08003325791506007D200B /* AlarmDetail.swift */; };
 		BF800D9A258248C400F49EEC /* Questions.c in Sources */ = {isa = PBXBuildFile; fileRef = BF800D99258248C400F49EEC /* Questions.c */; };
 		BF9E077D2577B9EB001BB60C /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9E077C2577B9EB001BB60C /* AlarmView.swift */; };
-		BF9E079A2577BD20001BB60C /* AlarmInfo.json in Resources */ = {isa = PBXBuildFile; fileRef = BF9E07992577BD20001BB60C /* AlarmInfo.json */; };
 		BFB56BB3256D2D9400CC4D7C /* ClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB56BB2256D2D9400CC4D7C /* ClockApp.swift */; };
 		BFB56BB5256D2D9400CC4D7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB56BB4256D2D9400CC4D7C /* ContentView.swift */; };
 		BFB56BB7256D2D9600CC4D7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB56BB6256D2D9600CC4D7C /* Assets.xcassets */; };
@@ -42,7 +41,6 @@
 		BF800D98258248C400F49EEC /* Questions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Questions.h; sourceTree = "<group>"; };
 		BF800D99258248C400F49EEC /* Questions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Questions.c; sourceTree = "<group>"; };
 		BF9E077C2577B9EB001BB60C /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
-		BF9E07992577BD20001BB60C /* AlarmInfo.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AlarmInfo.json; sourceTree = "<group>"; };
 		BFB56BAF256D2D9400CC4D7C /* Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB56BB2256D2D9400CC4D7C /* ClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockApp.swift; sourceTree = "<group>"; };
 		BFB56BB4256D2D9400CC4D7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,18 +89,9 @@
 			path = Question;
 			sourceTree = "<group>";
 		};
-		BF9E07902577BCF2001BB60C /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				BF9E07992577BD20001BB60C /* AlarmInfo.json */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		BFB56BA6256D2D9400CC4D7C = {
 			isa = PBXGroup;
 			children = (
-				BF9E07902577BCF2001BB60C /* Resources */,
 				BFB56BB1256D2D9400CC4D7C /* Clock */,
 				BFB56BC3256D2D9600CC4D7C /* ClockTests */,
 				BFB56BCE256D2D9600CC4D7C /* ClockUITests */,
@@ -268,7 +257,6 @@
 			files = (
 				BFB56BBA256D2D9600CC4D7C /* Preview Assets.xcassets in Resources */,
 				BFB56BB7256D2D9600CC4D7C /* Assets.xcassets in Resources */,
-				BF9E079A2577BD20001BB60C /* AlarmInfo.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
