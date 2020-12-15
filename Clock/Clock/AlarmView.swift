@@ -34,7 +34,11 @@ struct AlarmView: View {
 
 struct AlarmView_Previews: PreviewProvider {
     static var previews: some View {
-        AlarmView(alarmInfo: alarmInfoData[0])
+        Group {
+            AlarmView(alarmInfo: alarmInfoData[0])
+            AlarmView(alarmInfo: alarmInfoData[1])
+            AlarmView(alarmInfo: alarmInfoDataNew)
+        }
             .previewLayout(.fixed(width: 450, height: 105))
     }
 }
