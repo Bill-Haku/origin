@@ -10,14 +10,13 @@ import SwiftUI
 //var alarmInfo = [alarmInfoType]()
 
 struct AlarmView: View {
-//    var alarmInfo = Array(repeating: alarmInfoType(), count: 100)
     var alarmInfo: alarmInfoType
     
     @State private var isOn = true
     var body: some View {
         VStack {
             Toggle(isOn: $isOn, label: {
-                Text("\(alarmInfo.timeHr) : \(alarmInfo.timeMin)")
+                Text(alarmInfo.timeStr)
                     .font(.system(size: 40))
             })
             .frame(height: 75)
@@ -36,7 +35,7 @@ struct AlarmView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             AlarmView(alarmInfo: alarmInfoData[0])
-            AlarmView(alarmInfo: alarmInfoData[1])
+            AlarmView(alarmInfo: alarmInfoData[0])
             AlarmView(alarmInfo: alarmInfoDataNew)
         }
             .previewLayout(.fixed(width: 450, height: 105))

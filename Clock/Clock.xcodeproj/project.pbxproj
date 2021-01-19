@@ -16,6 +16,8 @@
 		BFB56BBA256D2D9600CC4D7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFB56BB9256D2D9600CC4D7C /* Preview Assets.xcassets */; };
 		BFB56BC5256D2D9600CC4D7C /* ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB56BC4256D2D9600CC4D7C /* ClockTests.swift */; };
 		BFB56BD0256D2D9600CC4D7C /* ClockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB56BCF256D2D9600CC4D7C /* ClockUITests.swift */; };
+		BFD7ED3325B4984F00F28456 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7ED3225B4984F00F28456 /* GameView.swift */; };
+		BFD7ED3825B4989400F28456 /* AlarmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7ED3725B4989400F28456 /* AlarmListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		BFB56BCB256D2D9600CC4D7C /* ClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB56BCF256D2D9600CC4D7C /* ClockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockUITests.swift; sourceTree = "<group>"; };
 		BFB56BD1256D2D9600CC4D7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFD7ED3225B4984F00F28456 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		BFD7ED3725B4989400F28456 /* AlarmListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,8 @@
 			children = (
 				BFB56BB2256D2D9400CC4D7C /* ClockApp.swift */,
 				BFB56BB4256D2D9400CC4D7C /* ContentView.swift */,
+				BFD7ED3725B4989400F28456 /* AlarmListView.swift */,
+				BFD7ED3225B4984F00F28456 /* GameView.swift */,
 				BF08003325791506007D200B /* AlarmDetail.swift */,
 				BF9E077C2577B9EB001BB60C /* AlarmView.swift */,
 				BFB56BB6256D2D9600CC4D7C /* Assets.xcassets */,
@@ -283,8 +289,10 @@
 			files = (
 				BF08003425791506007D200B /* AlarmDetail.swift in Sources */,
 				BFB56BB5256D2D9400CC4D7C /* ContentView.swift in Sources */,
+				BFD7ED3825B4989400F28456 /* AlarmListView.swift in Sources */,
 				BFB56BB3256D2D9400CC4D7C /* ClockApp.swift in Sources */,
 				BF9E077D2577B9EB001BB60C /* AlarmView.swift in Sources */,
+				BFD7ED3325B4984F00F28456 /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -427,7 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
