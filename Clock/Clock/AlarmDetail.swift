@@ -11,8 +11,6 @@ struct AlarmDetail: View {
     var alarmInfo: alarmInfoType
     var currentID: Int
     var isNewAlarm: Bool
-    @State private var date = Date()
-    @State private var time = TIME_RELATIVE
     @State private var dueDate = Date()
     @State private var alarmName = ""
     
@@ -75,7 +73,21 @@ struct AlarmDetail: View {
                 
                 //print("\(newAlarmInfoData.timeStr)\n\(newAlarmInfoData.name)\n\(newAlarmInfoData.id)")
             }
-            
+            if !isNewAlarm {
+                let calendar = Calendar.current
+                let dateComponets1 = calendar.dateComponents(in: TimeZone.init(secondsFromGMT: 3600*8)!, from: dueDate)
+                print("\(dateComponets1.year!)-\(dateComponets1.month!)-\(dateComponets1.day!) \(dateComponets1.hour!):\(dateComponets1.minute!)\n")
+                let dateComponets2 = calendar.dateComponents([Calendar.Component.hour,Calendar.Component.minute], from: dueDate)
+                
+                alarmInfoData[currentID].timeStr = "\(dateComponets2.hour ?? alarmInfo.timeHr):\(dateComponets2.minute ?? alarmInfo.timeMin)"
+                alarmInfoData[currentID].isOn = true
+                if alarmName != "" {
+                    alarmInfoData[currentID].name = alarmName
+                }
+                alarmInfoData[currentID].timeHr = dateComponets2.hour!
+                alarmInfoData[currentID].timeMin = dateComponets2.minute!
+                
+            }
         }, label: {
             Text("Save")
         }))

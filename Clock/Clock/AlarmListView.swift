@@ -8,15 +8,28 @@
 import SwiftUI
 
 struct AlarmListView: View {
-    @State private var isPresented = false
-    
     var body: some View {
         VStack {
-            NavigationView {
+            OutOfControlView()
+        }
+    }
+}
+
+struct OutOfControlView: View {
+    @State private var count: Int = 0
+    @State private var isPresented = false
+
+    var body: some View {
+        DispatchQueue.main.async {
+            self.count += 1
+        }
+
+        return NavigationView {
+            VStack {
                 List(alarmInfoData) { alarmInfo in
                     NavigationLink(
                         destination: AlarmDetail(alarmInfo: alarmInfo, currentID: alarmInfo.id, isNewAlarm: false)) {
-                        AlarmView(alarmInfo: alarmInfo)
+                        AlarmView(alarmInfo: alarmInfo, currentID: alarmInfo.id)
                     }
                 }
                 .navigationBarTitle(Text("Alarm List"),displayMode: .automatic)
@@ -26,6 +39,7 @@ struct AlarmListView: View {
                         Image(systemName: "plus.circle")
                     }
                 )
+                Text("\(self.count)")
             }
         }
     }

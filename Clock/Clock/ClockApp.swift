@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct alarmInfoType: Hashable, Codable, Identifiable{
-    var isOn: Bool
+struct alarmInfoType: Identifiable{
+    @State var isOn: Bool
     var id: Int
     var timeHr: Int
     var timeMin: Int
