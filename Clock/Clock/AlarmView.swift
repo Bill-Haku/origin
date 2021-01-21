@@ -15,12 +15,12 @@ func GetID() {
 }*/
 
 struct AlarmView: View {
-    var alarmInfo: alarmInfoType
     var currentID: Int
-    @State private var isOn = true
+    @ObservedObject var alarmInfo: alarmInfoClass = alarmInfoDatas[curID]
+    //@State private var isOn = true
     var body: some View {
         VStack {
-            Toggle(isOn: alarmInfo.$isOn, label: {
+            Toggle(isOn: $alarmInfo.isOn, label: {
                 HStack {
                     Image(systemName: "alarm")
                     Text(" \(alarmInfo.timeStr)")
@@ -30,11 +30,12 @@ struct AlarmView: View {
             })
             .frame(height: 75)
             HStack {
-                Label(alarmInfo.name!, systemImage: "")
+                Label(alarmInfo.name, systemImage: "")
                     .frame(height: 30)
                     .font(.system(size: 20))
                     .foregroundColor(.gray)
                 Spacer()
+                Text("\(currentID)")
             }
         }
     }
@@ -45,8 +46,9 @@ struct AlarmView: View {
 struct AlarmView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            AlarmView(alarmInfo: alarmInfoData[0], currentID: 0)
-            AlarmView(alarmInfo: alarmInfoDataNew, currentID: 0)
+            AlarmView(currentID: 0, alarmInfo: alarmInfoDatas[0])
+            AlarmView(currentID: 1, alarmInfo: alarmInfoDatas[1])
+            AlarmView(currentID: 0, alarmInfo: alarmInfoDataNew)
         }
             .previewLayout(.fixed(width: 460, height: 105))
     }

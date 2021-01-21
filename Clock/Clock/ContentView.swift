@@ -22,8 +22,6 @@ struct ContentView: View {
                     Text("Game")
                 }
             }
-        .font(.headline)
-        .edgesIgnoringSafeArea(.all)
     }
 }
 

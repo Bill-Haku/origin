@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct AlarmDetail: View {
-    var alarmInfo: alarmInfoType
+    var alarmInfo: alarmInfoClass
     var currentID: Int
-    var isNewAlarm: Bool
     @State private var dueDate = Date()
     @State private var alarmName = ""
     
@@ -21,12 +20,6 @@ struct AlarmDetail: View {
         return formatter
     }
     
-    func SetInitAlarmName() {
-        if !isNewAlarm {
-            alarmName = alarmInfo.name!
-        }
-    }
-    
     var body: some View {
         NavigationView {
             VStack {
@@ -35,9 +28,11 @@ struct AlarmDetail: View {
                         .font(.title)
                     Spacer()
                 }
-                DatePicker("Alarm: '\(alarmInfo.name!)'", selection: $dueDate, displayedComponents: [.hourAndMinute])
+                .foregroundColor(.black)
+                DatePicker("Alarm\(currentID): '\(alarmInfo.name)'", selection: $dueDate, displayedComponents: [.hourAndMinute])
                     .frame(height: 50)
                     .font(.title2)
+                    .foregroundColor(.black)
                 HStack {
                     Text("Alarm name: ")
                         .font(.title2)
@@ -46,48 +41,29 @@ struct AlarmDetail: View {
                         .font(.title2)
 
                 }
+                .foregroundColor(.black)
                 Spacer()
-                Text("\(dueDate, formatter: dateFormatter)")
-                Text(dueDate.description)
+                //Text("\(dueDate, formatter: dateFormatter)")
+                //Text(dueDate.description)
 
             }
         }
         .navigationBarTitle(Text("Set the alarm"), displayMode: .inline)
         .navigationBarItems(trailing: Button(action: {
-            if isNewAlarm {
-                alarmNum += 1
-                let calendar = Calendar.current
-                let dateComponets1 = calendar.dateComponents(in: TimeZone.init(secondsFromGMT: 3600*8)!, from: dueDate)
-                print("\(dateComponets1.year!)-\(dateComponets1.month!)-\(dateComponets1.day!) \(dateComponets1.hour!):\(dateComponets1.minute!)\n")
-                let dateComponets2 = calendar.dateComponents([Calendar.Component.hour,Calendar.Component.minute], from: dueDate)
+            print(currentID)
+            let calendar = Calendar.current
+            let dateComponets1 = calendar.dateComponents(in: TimeZone.init(secondsFromGMT: 3600*8)!, from: dueDate)
+            print("\(dateComponets1.year!)-\(dateComponets1.month!)-\(dateComponets1.day!) \(dateComponets1.hour!):\(dateComponets1.minute!)\n")
+            let dateComponets2 = calendar.dateComponents([Calendar.Component.hour,Calendar.Component.minute], from: dueDate)
                 
-                var newAlarmInfoData: alarmInfoType = alarmInfoDataNew
-                newAlarmInfoData.timeStr = "\(String(describing: dateComponets2.hour)):\(String(describing: dateComponets2.minute))"
-                newAlarmInfoData.id = currentID + 1
-                newAlarmInfoData.isOn = true
-                newAlarmInfoData.name = alarmName
-                newAlarmInfoData.timeHr = dateComponets2.hour!
-                newAlarmInfoData.timeMin = dateComponets2.minute!
-                
-                alarmInfoData.append(newAlarmInfoData)
-                
-                //print("\(newAlarmInfoData.timeStr)\n\(newAlarmInfoData.name)\n\(newAlarmInfoData.id)")
+            alarmInfoDatas[currentID].timeStr = "\(dateComponets2.hour ?? 0):\(dateComponets2.minute ?? 0)"
+            alarmInfoDatas[currentID].isOn = true
+            if alarmName != "" {
+                alarmInfoDatas[currentID].name = alarmName
             }
-            if !isNewAlarm {
-                let calendar = Calendar.current
-                let dateComponets1 = calendar.dateComponents(in: TimeZone.init(secondsFromGMT: 3600*8)!, from: dueDate)
-                print("\(dateComponets1.year!)-\(dateComponets1.month!)-\(dateComponets1.day!) \(dateComponets1.hour!):\(dateComponets1.minute!)\n")
-                let dateComponets2 = calendar.dateComponents([Calendar.Component.hour,Calendar.Component.minute], from: dueDate)
-                
-                alarmInfoData[currentID].timeStr = "\(dateComponets2.hour ?? alarmInfo.timeHr):\(dateComponets2.minute ?? alarmInfo.timeMin)"
-                alarmInfoData[currentID].isOn = true
-                if alarmName != "" {
-                    alarmInfoData[currentID].name = alarmName
-                }
-                alarmInfoData[currentID].timeHr = dateComponets2.hour!
-                alarmInfoData[currentID].timeMin = dateComponets2.minute!
-                
-            }
+            
+            print(alarmInfoDatas[currentID].isOn)
+            print(alarmInfoDatas[currentID].timeStr)
         }, label: {
             Text("Save")
         }))
@@ -96,6 +72,6 @@ struct AlarmDetail: View {
 
 struct AlarmDetail_Previews: PreviewProvider {
     static var previews: some View {
-        AlarmDetail(alarmInfo: alarmInfoDataNew, currentID: alarmInfoDataNew.id, isNewAlarm: true)
+        AlarmDetail(alarmInfo: alarmInfoDataNew, currentID: alarmNum+1)
     }
 }
