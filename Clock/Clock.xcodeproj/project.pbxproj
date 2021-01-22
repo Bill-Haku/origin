@@ -19,6 +19,7 @@
 		BFD7ED3325B4984F00F28456 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7ED3225B4984F00F28456 /* GameView.swift */; };
 		BFD7ED3825B4989400F28456 /* AlarmListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD7ED3725B4989400F28456 /* AlarmListView.swift */; };
 		BFD7ED4F25B968D400F28456 /* GirlInside.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BFD7ED4E25B968D400F28456 /* GirlInside.jpeg */; };
+		BFD7ED6225BA86D500F28456 /* AlarmSound.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BFD7ED6125BA86D500F28456 /* AlarmSound.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		BFD7ED3225B4984F00F28456 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		BFD7ED3725B4989400F28456 /* AlarmListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListView.swift; sourceTree = "<group>"; };
 		BFD7ED4E25B968D400F28456 /* GirlInside.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = GirlInside.jpeg; sourceTree = "<group>"; };
+		BFD7ED6125BA86D500F28456 /* AlarmSound.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = AlarmSound.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +129,7 @@
 				BFB56BB6256D2D9600CC4D7C /* Assets.xcassets */,
 				BF800D9E25824A1700F49EEC /* Question */,
 				BFD7ED4B25B9686200F28456 /* New Group */,
-				BFD7ED4C25B9689500F28456 /* ImageResource */,
+				BFD7ED4C25B9689500F28456 /* Resources */,
 				BFB56BBB256D2D9600CC4D7C /* Info.plist */,
 				BFB56BB8256D2D9600CC4D7C /* Preview Content */,
 				BF800D97258248C300F49EEC /* ClockTests-Bridging-Header.h */,
@@ -168,12 +170,13 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
-		BFD7ED4C25B9689500F28456 /* ImageResource */ = {
+		BFD7ED4C25B9689500F28456 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BFD7ED6125BA86D500F28456 /* AlarmSound.m4a */,
 				BFD7ED4E25B968D400F28456 /* GirlInside.jpeg */,
 			);
-			path = ImageResource;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFD7ED6225BA86D500F28456 /* AlarmSound.m4a in Resources */,
 				BFB56BBA256D2D9600CC4D7C /* Preview Assets.xcassets in Resources */,
 				BFD7ED4F25B968D400F28456 /* GirlInside.jpeg in Resources */,
 				BFB56BB7256D2D9600CC4D7C /* Assets.xcassets in Resources */,
@@ -472,6 +476,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Clock/Preview Content\"";
+				DEVELOPMENT_TEAM = L7XRJ79BCH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Clock/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -493,6 +498,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Clock/Preview Content\"";
+				DEVELOPMENT_TEAM = L7XRJ79BCH;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Clock/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

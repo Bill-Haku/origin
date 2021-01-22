@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 /*var alarmID: Int = 0
 
@@ -29,13 +30,60 @@ struct AlarmView: View {
                 
             })
             .frame(height: 75)
+            .onReceive([self.$alarmInfo.$isOn].publisher.first(), perform: { _ in
+                addNotification()
+                if alarmInfo.isOn {
+                    print("Alarm Set")
+                }
+                else {
+                    print("Alarm off")
+                }
+            })
             HStack {
                 Label(alarmInfo.name, systemImage: "")
                     .frame(height: 30)
                     .font(.system(size: 20))
                     .foregroundColor(.gray)
                 Spacer()
-                Text("\(currentID)")
+            }
+        }
+    }
+    
+    func addNotification() {
+        let center = UNUserNotificationCenter.current()
+
+        let addRequest = {
+            let content = UNMutableNotificationContent()
+            content.title = "\(alarmInfo.name)"
+            //content.subtitle = prospect.emailAddress
+            //content.sound = UNNotificationSound.default
+            content.sound = UNNotificationSound.criticalSoundNamed(UNNotificationSoundName(rawValue: "AlarmSound.m4a"))
+            //content.sound=[UNNotificationSound soundNamed:@"AlarmSound.m4a"]
+
+            var dateComponents = DateComponents()
+            dateComponents.hour = alarmInfo.timeHour
+            dateComponents.minute = alarmInfo.timeMinute
+            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+            //let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
+
+            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+            center.add(request)
+            print("Set at \(dateComponents.hour ?? -1) : \(dateComponents.minute ?? -1)")
+        }
+
+        // more code to come
+        center.getNotificationSettings { settings in
+            if settings.authorizationStatus == .authorized {
+                addRequest()
+                print("Active")
+            } else {
+                center.requestAuthorization(options: [.alert, .badge, .sound]) { success, error in
+                    if success {
+                        addRequest()
+                    } else {
+                        print("D'oh")
+                    }
+                }
             }
         }
     }

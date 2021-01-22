@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AlarmListView: View {
     @State private var isSheetPresented = false
-    @ObservedObject var alarmInfoData = alarmInfoClass(isOn: true, timeStr: "0:0", name: "")
+    //@ObservedObject var alarmInfoData = alarmInfoClass(isOn: true, timeStr: "0:0", name: "")
     //var alarmInfo: alarmInfoClass
     var currentID: Int = curID
     @State private var dueDate = Date()

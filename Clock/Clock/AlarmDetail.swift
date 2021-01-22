@@ -57,6 +57,8 @@ struct AlarmDetail: View {
             let dateComponets2 = calendar.dateComponents([Calendar.Component.hour,Calendar.Component.minute], from: dueDate)
                 
             alarmInfoDatas[currentID].timeStr = "\(dateComponets2.hour ?? 0):\(dateComponets2.minute ?? 0)"
+            alarmInfoDatas[currentID].timeHour = dateComponets2.hour ?? 0
+            alarmInfoDatas[currentID].timeMinute = dateComponets2.minute ?? 0
             alarmInfoDatas[currentID].isOn = true
             if alarmName != "" {
                 alarmInfoDatas[currentID].name = alarmName

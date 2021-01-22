@@ -19,7 +19,6 @@ struct GameView: View {
                     {
                         self.products.append(self.pName)
                         self.pName = ""
-
                     }
 
                 }){
