@@ -29,10 +29,9 @@ struct AlarmDetail: View {
                     Spacer()
                 }
                 .foregroundColor(.black)
-                DatePicker("Alarm\(currentID): '\(alarmInfo.name)'", selection: $dueDate, displayedComponents: [.hourAndMinute])
+                DatePicker("Alarm \(currentID+1): '\(alarmInfo.name)'", selection: $dueDate, displayedComponents: [.hourAndMinute])
                     .frame(height: 50)
                     .font(.title2)
-                    .foregroundColor(.black)
                 HStack {
                     Text("Alarm name: ")
                         .font(.title2)
@@ -41,7 +40,6 @@ struct AlarmDetail: View {
                         .font(.title2)
 
                 }
-                .foregroundColor(.black)
                 Spacer()
                 //Text("\(dueDate, formatter: dateFormatter)")
                 //Text(dueDate.description)

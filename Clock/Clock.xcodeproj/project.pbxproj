@@ -128,7 +128,6 @@
 				BF9E077C2577B9EB001BB60C /* AlarmView.swift */,
 				BFB56BB6256D2D9600CC4D7C /* Assets.xcassets */,
 				BF800D9E25824A1700F49EEC /* Question */,
-				BFD7ED4B25B9686200F28456 /* New Group */,
 				BFD7ED4C25B9689500F28456 /* Resources */,
 				BFB56BBB256D2D9600CC4D7C /* Info.plist */,
 				BFB56BB8256D2D9600CC4D7C /* Preview Content */,
@@ -161,13 +160,6 @@
 				BFB56BD1256D2D9600CC4D7C /* Info.plist */,
 			);
 			path = ClockUITests;
-			sourceTree = "<group>";
-		};
-		BFD7ED4B25B9686200F28456 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		BFD7ED4C25B9689500F28456 /* Resources */ = {

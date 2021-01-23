@@ -16,7 +16,8 @@ struct ContentView: View {
                     Image(systemName: "alarm")
                     Text("Alarm")
                 }
-            GameView()
+            //GameView()
+                Text("Game view")
                 .tabItem {
                     Image(systemName: "gamecontroller")
                     Text("Game")

@@ -9,8 +9,7 @@ import SwiftUI
 
 struct AlarmListView: View {
     @State private var isSheetPresented = false
-    //@ObservedObject var alarmInfoData = alarmInfoClass(isOn: true, timeStr: "0:0", name: "")
-    //var alarmInfo: alarmInfoClass
+    @State var alarmInfoDatass: [alarmInfoClass] = alarmInfoDatas
     var currentID: Int = curID
     @State private var dueDate = Date()
     @State private var alarmName = ""
@@ -25,7 +24,7 @@ struct AlarmListView: View {
     var mainView: some View {
         return NavigationView {
             VStack {
-                List(alarmInfoDatas.indices, id: \.self) { index in
+                List(alarmInfoDatass.indices, id: \.self) { index in
                     NavigationLink(
                         destination: AlarmDetail(alarmInfo: alarmInfoDatas[index], currentID: index)) {
                         AlarmView(currentID: index, alarmInfo: alarmInfoDatas[index])
@@ -40,7 +39,26 @@ struct AlarmListView: View {
                         Image(systemName: "plus.circle")
                             .sheet(isPresented: $isSheetPresented) {
                                 VStack{
-                                    AlarmDetail(alarmInfo: alarmInfoDataNew, currentID: curID)
+                                    //AlarmDetail(alarmInfo: alarmInfoDataNew, currentID: curID)
+                                    VStack {
+                                        Text(" ").font(.title)
+                                        HStack {
+                                            Text("Set the time of")
+                                                .font(.title)
+                                            Spacer()
+                                        }
+                                        .foregroundColor(.black)
+                                        DatePicker("Alarm\(alarmNum): '\(alarmInfoDataNew.name)'", selection: $dueDate, displayedComponents: [.hourAndMinute])
+                                            .frame(height: 50)
+                                            .font(.title2)
+                                        HStack {
+                                            Text("Alarm name: ")
+                                                .font(.title2)
+                                            TextField("Enter your alarm name", text: $alarmName)
+                                                .frame(height: 100)
+                                                .font(.title2)
+                                        }
+                                    Spacer()
                                     Button(action: {
                                         alarmNum += 1
                                         let calendar = Calendar.current
@@ -50,12 +68,11 @@ struct AlarmListView: View {
                                         
                                         let newAlarmInfoData: alarmInfoClass = alarmInfoDataNew
                                         newAlarmInfoData.timeStr = "\( dateComponets2.hour ?? 0):\( dateComponets2.minute ?? 0)"
-                                        //newAlarmInfoData.id = currentID + 1
                                         newAlarmInfoData.isOn = true
                                         newAlarmInfoData.name = alarmName
                                         
+                                        alarmInfoDatass.append(newAlarmInfoData)
                                         alarmInfoDatas.append(newAlarmInfoData)
-                                        alarmInfoDatas.append(alarmInfoDataNew)
                                         
                                         isSheetPresented = false
                                     }, label: {
@@ -63,10 +80,11 @@ struct AlarmListView: View {
                                             .foregroundColor(.blue)
                                     })
                                 }
+                            }
                         }
-                    })
+                    }
                 )
-            }
+            )}
         }
     }
     
