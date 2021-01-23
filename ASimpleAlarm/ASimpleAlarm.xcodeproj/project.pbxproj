@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2703341125B5CD1800811455 /* GlobalContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2703341025B5CD1800811455 /* GlobalContent.swift */; };
+		27F0BAB925B1F090003F3D5C /* ASimpleAlarmApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F0BAB825B1F090003F3D5C /* ASimpleAlarmApp.swift */; };
+		27F0BABB25B1F090003F3D5C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F0BABA25B1F090003F3D5C /* ContentView.swift */; };
+		27F0BABD25B1F091003F3D5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F0BABC25B1F091003F3D5C /* Assets.xcassets */; };
+		27F0BAC025B1F091003F3D5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27F0BABF25B1F091003F3D5C /* Preview Assets.xcassets */; };
+		27F0BACB25B1F091003F3D5C /* ASimpleAlarmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F0BACA25B1F091003F3D5C /* ASimpleAlarmTests.swift */; };
+		27F0BAD625B1F091003F3D5C /* ASimpleAlarmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F0BAD525B1F091003F3D5C /* ASimpleAlarmUITests.swift */; };
+		27F0BAEF25B1FE85003F3D5C /* AddAlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F0BAEE25B1FE85003F3D5C /* AddAlarmView.swift */; };
+		9F3DD22D25B9A3B400693E03 /* music.ncm in Resources */ = {isa = PBXBuildFile; fileRef = 9F3DD22C25B9A3B400693E03 /* music.ncm */; };
+		9F3DD24725B9CA1100693E03 /* PhantomFromSpace.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F3DD24625B9CA1100693E03 /* PhantomFromSpace.mp3 */; };
+		9F3DD25625BB3A0C00693E03 /* MusicTest.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9F3DD25525BB3A0C00693E03 /* MusicTest.m4a */; };
+		9F3DD26B25BB3B9700693E03 /* mc.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F3DD26A25BB3B9600693E03 /* mc.mp3 */; };
+		9F3DD27025BB40E300693E03 /* music.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 9F3DD26F25BB40E300693E03 /* music.m4a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27F0BAC725B1F091003F3D5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27F0BAAD25B1F090003F3D5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27F0BAB425B1F090003F3D5C;
+			remoteInfo = ASimpleAlarm;
+		};
+		27F0BAD225B1F091003F3D5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27F0BAAD25B1F090003F3D5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27F0BAB425B1F090003F3D5C;
+			remoteInfo = ASimpleAlarm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2703341025B5CD1800811455 /* GlobalContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalContent.swift; sourceTree = "<group>"; };
+		27F0BAB525B1F090003F3D5C /* ASimpleAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ASimpleAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27F0BAB825B1F090003F3D5C /* ASimpleAlarmApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASimpleAlarmApp.swift; sourceTree = "<group>"; };
+		27F0BABA25B1F090003F3D5C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		27F0BABC25B1F091003F3D5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27F0BABF25B1F091003F3D5C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		27F0BAC125B1F091003F3D5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27F0BAC625B1F091003F3D5C /* ASimpleAlarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASimpleAlarmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27F0BACA25B1F091003F3D5C /* ASimpleAlarmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASimpleAlarmTests.swift; sourceTree = "<group>"; };
+		27F0BACC25B1F091003F3D5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27F0BAD125B1F091003F3D5C /* ASimpleAlarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ASimpleAlarmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27F0BAD525B1F091003F3D5C /* ASimpleAlarmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASimpleAlarmUITests.swift; sourceTree = "<group>"; };
+		27F0BAD725B1F091003F3D5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27F0BAEE25B1FE85003F3D5C /* AddAlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAlarmView.swift; sourceTree = "<group>"; };
+		9F3DD22C25B9A3B400693E03 /* music.ncm */ = {isa = PBXFileReference; lastKnownFileType = file; path = music.ncm; sourceTree = "<group>"; };
+		9F3DD24625B9CA1100693E03 /* PhantomFromSpace.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = PhantomFromSpace.mp3; sourceTree = "<group>"; };
+		9F3DD25525BB3A0C00693E03 /* MusicTest.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = MusicTest.m4a; sourceTree = "<group>"; };
+		9F3DD26A25BB3B9600693E03 /* mc.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mc.mp3; sourceTree = "<group>"; };
+		9F3DD26F25BB40E300693E03 /* music.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = music.m4a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27F0BAB225B1F090003F3D5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F0BAC325B1F091003F3D5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F0BACE25B1F091003F3D5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27F0BAAC25B1F090003F3D5C = {
+			isa = PBXGroup;
+			children = (
+				27F0BAB725B1F090003F3D5C /* ASimpleAlarm */,
+				27F0BAC925B1F091003F3D5C /* ASimpleAlarmTests */,
+				27F0BAD425B1F091003F3D5C /* ASimpleAlarmUITests */,
+				27F0BAB625B1F090003F3D5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27F0BAB625B1F090003F3D5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27F0BAB525B1F090003F3D5C /* ASimpleAlarm.app */,
+				27F0BAC625B1F091003F3D5C /* ASimpleAlarmTests.xctest */,
+				27F0BAD125B1F091003F3D5C /* ASimpleAlarmUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27F0BAB725B1F090003F3D5C /* ASimpleAlarm */ = {
+			isa = PBXGroup;
+			children = (
+				2703341025B5CD1800811455 /* GlobalContent.swift */,
+				27F0BABA25B1F090003F3D5C /* ContentView.swift */,
+				27F0BAEE25B1FE85003F3D5C /* AddAlarmView.swift */,
+				9F3DD25525BB3A0C00693E03 /* MusicTest.m4a */,
+				27F0BAB825B1F090003F3D5C /* ASimpleAlarmApp.swift */,
+				9F3DD24525B9C99F00693E03 /* content */,
+				9F3DD22C25B9A3B400693E03 /* music.ncm */,
+				9F3DD26A25BB3B9600693E03 /* mc.mp3 */,
+				9F3DD26F25BB40E300693E03 /* music.m4a */,
+				27F0BABC25B1F091003F3D5C /* Assets.xcassets */,
+				27F0BAC125B1F091003F3D5C /* Info.plist */,
+				27F0BABE25B1F091003F3D5C /* Preview Content */,
+			);
+			path = ASimpleAlarm;
+			sourceTree = "<group>";
+		};
+		27F0BABE25B1F091003F3D5C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				27F0BABF25B1F091003F3D5C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		27F0BAC925B1F091003F3D5C /* ASimpleAlarmTests */ = {
+			isa = PBXGroup;
+			children = (
+				27F0BACA25B1F091003F3D5C /* ASimpleAlarmTests.swift */,
+				27F0BACC25B1F091003F3D5C /* Info.plist */,
+			);
+			path = ASimpleAlarmTests;
+			sourceTree = "<group>";
+		};
+		27F0BAD425B1F091003F3D5C /* ASimpleAlarmUITests */ = {
+			isa = PBXGroup;
+			children = (
+				27F0BAD525B1F091003F3D5C /* ASimpleAlarmUITests.swift */,
+				27F0BAD725B1F091003F3D5C /* Info.plist */,
+			);
+			path = ASimpleAlarmUITests;
+			sourceTree = "<group>";
+		};
+		9F3DD24525B9C99F00693E03 /* content */ = {
+			isa = PBXGroup;
+			children = (
+				9F3DD24625B9CA1100693E03 /* PhantomFromSpace.mp3 */,
+			);
+			path = content;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27F0BAB425B1F090003F3D5C /* ASimpleAlarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27F0BADA25B1F091003F3D5C /* Build configuration list for PBXNativeTarget "ASimpleAlarm" */;
+			buildPhases = (
+				27F0BAB125B1F090003F3D5C /* Sources */,
+				27F0BAB225B1F090003F3D5C /* Frameworks */,
+				27F0BAB325B1F090003F3D5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ASimpleAlarm;
+			productName = ASimpleAlarm;
+			productReference = 27F0BAB525B1F090003F3D5C /* ASimpleAlarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27F0BAC525B1F091003F3D5C /* ASimpleAlarmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27F0BADD25B1F091003F3D5C /* Build configuration list for PBXNativeTarget "ASimpleAlarmTests" */;
+			buildPhases = (
+				27F0BAC225B1F091003F3D5C /* Sources */,
+				27F0BAC325B1F091003F3D5C /* Frameworks */,
+				27F0BAC425B1F091003F3D5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27F0BAC825B1F091003F3D5C /* PBXTargetDependency */,
+			);
+			name = ASimpleAlarmTests;
+			productName = ASimpleAlarmTests;
+			productReference = 27F0BAC625B1F091003F3D5C /* ASimpleAlarmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		27F0BAD025B1F091003F3D5C /* ASimpleAlarmUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27F0BAE025B1F091003F3D5C /* Build configuration list for PBXNativeTarget "ASimpleAlarmUITests" */;
+			buildPhases = (
+				27F0BACD25B1F091003F3D5C /* Sources */,
+				27F0BACE25B1F091003F3D5C /* Frameworks */,
+				27F0BACF25B1F091003F3D5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27F0BAD325B1F091003F3D5C /* PBXTargetDependency */,
+			);
+			name = ASimpleAlarmUITests;
+			productName = ASimpleAlarmUITests;
+			productReference = 27F0BAD125B1F091003F3D5C /* ASimpleAlarmUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27F0BAAD25B1F090003F3D5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					27F0BAB425B1F090003F3D5C = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					27F0BAC525B1F091003F3D5C = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 27F0BAB425B1F090003F3D5C;
+					};
+					27F0BAD025B1F091003F3D5C = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 27F0BAB425B1F090003F3D5C;
+					};
+				};
+			};
+			buildConfigurationList = 27F0BAB025B1F090003F3D5C /* Build configuration list for PBXProject "ASimpleAlarm" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27F0BAAC25B1F090003F3D5C;
+			productRefGroup = 27F0BAB625B1F090003F3D5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27F0BAB425B1F090003F3D5C /* ASimpleAlarm */,
+				27F0BAC525B1F091003F3D5C /* ASimpleAlarmTests */,
+				27F0BAD025B1F091003F3D5C /* ASimpleAlarmUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27F0BAB325B1F090003F3D5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F3DD25625BB3A0C00693E03 /* MusicTest.m4a in Resources */,
+				27F0BAC025B1F091003F3D5C /* Preview Assets.xcassets in Resources */,
+				9F3DD27025BB40E300693E03 /* music.m4a in Resources */,
+				9F3DD26B25BB3B9700693E03 /* mc.mp3 in Resources */,
+				27F0BABD25B1F091003F3D5C /* Assets.xcassets in Resources */,
+				9F3DD22D25B9A3B400693E03 /* music.ncm in Resources */,
+				9F3DD24725B9CA1100693E03 /* PhantomFromSpace.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F0BAC425B1F091003F3D5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F0BACF25B1F091003F3D5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27F0BAB125B1F090003F3D5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F0BABB25B1F090003F3D5C /* ContentView.swift in Sources */,
+				27F0BAB925B1F090003F3D5C /* ASimpleAlarmApp.swift in Sources */,
+				2703341125B5CD1800811455 /* GlobalContent.swift in Sources */,
+				27F0BAEF25B1FE85003F3D5C /* AddAlarmView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F0BAC225B1F091003F3D5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F0BACB25B1F091003F3D5C /* ASimpleAlarmTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27F0BACD25B1F091003F3D5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F0BAD625B1F091003F3D5C /* ASimpleAlarmUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27F0BAC825B1F091003F3D5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27F0BAB425B1F090003F3D5C /* ASimpleAlarm */;
+			targetProxy = 27F0BAC725B1F091003F3D5C /* PBXContainerItemProxy */;
+		};
+		27F0BAD325B1F091003F3D5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27F0BAB425B1F090003F3D5C /* ASimpleAlarm */;
+			targetProxy = 27F0BAD225B1F091003F3D5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		27F0BAD825B1F091003F3D5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		27F0BAD925B1F091003F3D5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27F0BADB25B1F091003F3D5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ASimpleAlarm/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ASimpleAlarm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YuhanZero.ASimpleAlarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27F0BADC25B1F091003F3D5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"ASimpleAlarm/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ASimpleAlarm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YuhanZero.ASimpleAlarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		27F0BADE25B1F091003F3D5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ASimpleAlarmTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YuhanZero.ASimpleAlarmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ASimpleAlarm.app/ASimpleAlarm";
+			};
+			name = Debug;
+		};
+		27F0BADF25B1F091003F3D5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ASimpleAlarmTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YuhanZero.ASimpleAlarmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ASimpleAlarm.app/ASimpleAlarm";
+			};
+			name = Release;
+		};
+		27F0BAE125B1F091003F3D5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ASimpleAlarmUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YuhanZero.ASimpleAlarmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ASimpleAlarm;
+			};
+			name = Debug;
+		};
+		27F0BAE225B1F091003F3D5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ASimpleAlarmUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = YuhanZero.ASimpleAlarmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ASimpleAlarm;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27F0BAB025B1F090003F3D5C /* Build configuration list for PBXProject "ASimpleAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27F0BAD825B1F091003F3D5C /* Debug */,
+				27F0BAD925B1F091003F3D5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27F0BADA25B1F091003F3D5C /* Build configuration list for PBXNativeTarget "ASimpleAlarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27F0BADB25B1F091003F3D5C /* Debug */,
+				27F0BADC25B1F091003F3D5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27F0BADD25B1F091003F3D5C /* Build configuration list for PBXNativeTarget "ASimpleAlarmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27F0BADE25B1F091003F3D5C /* Debug */,
+				27F0BADF25B1F091003F3D5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27F0BAE025B1F091003F3D5C /* Build configuration list for PBXNativeTarget "ASimpleAlarmUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27F0BAE125B1F091003F3D5C /* Debug */,
+				27F0BAE225B1F091003F3D5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27F0BAAD25B1F090003F3D5C /* Project object */;
+}

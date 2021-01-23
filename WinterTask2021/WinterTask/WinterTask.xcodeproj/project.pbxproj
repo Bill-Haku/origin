@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFF6DC4C25BC320600D20557 /* WinterTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6DC4B25BC320600D20557 /* WinterTaskApp.swift */; };
+		BFF6DC4E25BC320600D20557 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6DC4D25BC320600D20557 /* ContentView.swift */; };
+		BFF6DC5025BC320900D20557 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFF6DC4F25BC320900D20557 /* Assets.xcassets */; };
+		BFF6DC5325BC320900D20557 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFF6DC5225BC320900D20557 /* Preview Assets.xcassets */; };
+		BFF6DC5E25BC320900D20557 /* WinterTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6DC5D25BC320900D20557 /* WinterTaskTests.swift */; };
+		BFF6DC6925BC320900D20557 /* WinterTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6DC6825BC320900D20557 /* WinterTaskUITests.swift */; };
+		BFF6DC7A25BC325B00D20557 /* FileManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6DC7925BC325B00D20557 /* FileManagementView.swift */; };
+		BFF6DC7F25BC326A00D20557 /* WebBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6DC7E25BC326A00D20557 /* WebBrowserView.swift */; };
+		BFF6DC8425BC327600D20557 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6DC8325BC327600D20557 /* UserInfoView.swift */; };
+		BFF6DC8925BC389C00D20557 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6DC8825BC389C00D20557 /* MapView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFF6DC5A25BC320900D20557 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFF6DC4025BC320600D20557 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFF6DC4725BC320600D20557;
+			remoteInfo = WinterTask;
+		};
+		BFF6DC6525BC320900D20557 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFF6DC4025BC320600D20557 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFF6DC4725BC320600D20557;
+			remoteInfo = WinterTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BFF6DC4825BC320600D20557 /* WinterTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WinterTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFF6DC4B25BC320600D20557 /* WinterTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinterTaskApp.swift; sourceTree = "<group>"; };
+		BFF6DC4D25BC320600D20557 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BFF6DC4F25BC320900D20557 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFF6DC5225BC320900D20557 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BFF6DC5425BC320900D20557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFF6DC5925BC320900D20557 /* WinterTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WinterTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFF6DC5D25BC320900D20557 /* WinterTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinterTaskTests.swift; sourceTree = "<group>"; };
+		BFF6DC5F25BC320900D20557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFF6DC6425BC320900D20557 /* WinterTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WinterTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFF6DC6825BC320900D20557 /* WinterTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinterTaskUITests.swift; sourceTree = "<group>"; };
+		BFF6DC6A25BC320900D20557 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFF6DC7925BC325B00D20557 /* FileManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagementView.swift; sourceTree = "<group>"; };
+		BFF6DC7E25BC326A00D20557 /* WebBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebBrowserView.swift; sourceTree = "<group>"; };
+		BFF6DC8325BC327600D20557 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		BFF6DC8825BC389C00D20557 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFF6DC4525BC320600D20557 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFF6DC5625BC320900D20557 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFF6DC6125BC320900D20557 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFF6DC3F25BC320600D20557 = {
+			isa = PBXGroup;
+			children = (
+				BFF6DC4A25BC320600D20557 /* WinterTask */,
+				BFF6DC5C25BC320900D20557 /* WinterTaskTests */,
+				BFF6DC6725BC320900D20557 /* WinterTaskUITests */,
+				BFF6DC4925BC320600D20557 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFF6DC4925BC320600D20557 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6DC4825BC320600D20557 /* WinterTask.app */,
+				BFF6DC5925BC320900D20557 /* WinterTaskTests.xctest */,
+				BFF6DC6425BC320900D20557 /* WinterTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFF6DC4A25BC320600D20557 /* WinterTask */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6DC4B25BC320600D20557 /* WinterTaskApp.swift */,
+				BFF6DC4D25BC320600D20557 /* ContentView.swift */,
+				BFF6DC7925BC325B00D20557 /* FileManagementView.swift */,
+				BFF6DC7E25BC326A00D20557 /* WebBrowserView.swift */,
+				BFF6DC8825BC389C00D20557 /* MapView.swift */,
+				BFF6DC8325BC327600D20557 /* UserInfoView.swift */,
+				BFF6DC4F25BC320900D20557 /* Assets.xcassets */,
+				BFF6DC5425BC320900D20557 /* Info.plist */,
+				BFF6DC5125BC320900D20557 /* Preview Content */,
+			);
+			path = WinterTask;
+			sourceTree = "<group>";
+		};
+		BFF6DC5125BC320900D20557 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6DC5225BC320900D20557 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BFF6DC5C25BC320900D20557 /* WinterTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6DC5D25BC320900D20557 /* WinterTaskTests.swift */,
+				BFF6DC5F25BC320900D20557 /* Info.plist */,
+			);
+			path = WinterTaskTests;
+			sourceTree = "<group>";
+		};
+		BFF6DC6725BC320900D20557 /* WinterTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BFF6DC6825BC320900D20557 /* WinterTaskUITests.swift */,
+				BFF6DC6A25BC320900D20557 /* Info.plist */,
+			);
+			path = WinterTaskUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFF6DC4725BC320600D20557 /* WinterTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFF6DC6D25BC320900D20557 /* Build configuration list for PBXNativeTarget "WinterTask" */;
+			buildPhases = (
+				BFF6DC4425BC320600D20557 /* Sources */,
+				BFF6DC4525BC320600D20557 /* Frameworks */,
+				BFF6DC4625BC320600D20557 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WinterTask;
+			productName = WinterTask;
+			productReference = BFF6DC4825BC320600D20557 /* WinterTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFF6DC5825BC320900D20557 /* WinterTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFF6DC7025BC320900D20557 /* Build configuration list for PBXNativeTarget "WinterTaskTests" */;
+			buildPhases = (
+				BFF6DC5525BC320900D20557 /* Sources */,
+				BFF6DC5625BC320900D20557 /* Frameworks */,
+				BFF6DC5725BC320900D20557 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFF6DC5B25BC320900D20557 /* PBXTargetDependency */,
+			);
+			name = WinterTaskTests;
+			productName = WinterTaskTests;
+			productReference = BFF6DC5925BC320900D20557 /* WinterTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BFF6DC6325BC320900D20557 /* WinterTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFF6DC7325BC320900D20557 /* Build configuration list for PBXNativeTarget "WinterTaskUITests" */;
+			buildPhases = (
+				BFF6DC6025BC320900D20557 /* Sources */,
+				BFF6DC6125BC320900D20557 /* Frameworks */,
+				BFF6DC6225BC320900D20557 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFF6DC6625BC320900D20557 /* PBXTargetDependency */,
+			);
+			name = WinterTaskUITests;
+			productName = WinterTaskUITests;
+			productReference = BFF6DC6425BC320900D20557 /* WinterTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFF6DC4025BC320600D20557 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					BFF6DC4725BC320600D20557 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					BFF6DC5825BC320900D20557 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = BFF6DC4725BC320600D20557;
+					};
+					BFF6DC6325BC320900D20557 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = BFF6DC4725BC320600D20557;
+					};
+				};
+			};
+			buildConfigurationList = BFF6DC4325BC320600D20557 /* Build configuration list for PBXProject "WinterTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFF6DC3F25BC320600D20557;
+			productRefGroup = BFF6DC4925BC320600D20557 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFF6DC4725BC320600D20557 /* WinterTask */,
+				BFF6DC5825BC320900D20557 /* WinterTaskTests */,
+				BFF6DC6325BC320900D20557 /* WinterTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFF6DC4625BC320600D20557 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF6DC5325BC320900D20557 /* Preview Assets.xcassets in Resources */,
+				BFF6DC5025BC320900D20557 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFF6DC5725BC320900D20557 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFF6DC6225BC320900D20557 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFF6DC4425BC320600D20557 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF6DC7F25BC326A00D20557 /* WebBrowserView.swift in Sources */,
+				BFF6DC8925BC389C00D20557 /* MapView.swift in Sources */,
+				BFF6DC4E25BC320600D20557 /* ContentView.swift in Sources */,
+				BFF6DC7A25BC325B00D20557 /* FileManagementView.swift in Sources */,
+				BFF6DC4C25BC320600D20557 /* WinterTaskApp.swift in Sources */,
+				BFF6DC8425BC327600D20557 /* UserInfoView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFF6DC5525BC320900D20557 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF6DC5E25BC320900D20557 /* WinterTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFF6DC6025BC320900D20557 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF6DC6925BC320900D20557 /* WinterTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFF6DC5B25BC320900D20557 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFF6DC4725BC320600D20557 /* WinterTask */;
+			targetProxy = BFF6DC5A25BC320900D20557 /* PBXContainerItemProxy */;
+		};
+		BFF6DC6625BC320900D20557 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFF6DC4725BC320600D20557 /* WinterTask */;
+			targetProxy = BFF6DC6525BC320900D20557 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BFF6DC6B25BC320900D20557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BFF6DC6C25BC320900D20557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFF6DC6E25BC320900D20557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WinterTask/Preview Content\"";
+				DEVELOPMENT_TEAM = L7XRJ79BCH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WinterTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Haku.WinterTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFF6DC6F25BC320900D20557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WinterTask/Preview Content\"";
+				DEVELOPMENT_TEAM = L7XRJ79BCH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WinterTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Haku.WinterTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BFF6DC7125BC320900D20557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L7XRJ79BCH;
+				INFOPLIST_FILE = WinterTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Haku.WinterTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WinterTask.app/WinterTask";
+			};
+			name = Debug;
+		};
+		BFF6DC7225BC320900D20557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L7XRJ79BCH;
+				INFOPLIST_FILE = WinterTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Haku.WinterTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WinterTask.app/WinterTask";
+			};
+			name = Release;
+		};
+		BFF6DC7425BC320900D20557 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L7XRJ79BCH;
+				INFOPLIST_FILE = WinterTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Haku.WinterTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WinterTask;
+			};
+			name = Debug;
+		};
+		BFF6DC7525BC320900D20557 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L7XRJ79BCH;
+				INFOPLIST_FILE = WinterTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Haku.WinterTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WinterTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFF6DC4325BC320600D20557 /* Build configuration list for PBXProject "WinterTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFF6DC6B25BC320900D20557 /* Debug */,
+				BFF6DC6C25BC320900D20557 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFF6DC6D25BC320900D20557 /* Build configuration list for PBXNativeTarget "WinterTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFF6DC6E25BC320900D20557 /* Debug */,
+				BFF6DC6F25BC320900D20557 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFF6DC7025BC320900D20557 /* Build configuration list for PBXNativeTarget "WinterTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFF6DC7125BC320900D20557 /* Debug */,
+				BFF6DC7225BC320900D20557 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFF6DC7325BC320900D20557 /* Build configuration list for PBXNativeTarget "WinterTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFF6DC7425BC320900D20557 /* Debug */,
+				BFF6DC7525BC320900D20557 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFF6DC4025BC320600D20557 /* Project object */;
+}
